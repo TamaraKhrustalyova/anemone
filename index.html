@@ -1,136 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>anemone</title>
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+    
+        <link rel="stylesheet" href="./main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+     </head>
+
+    <body>
+        <header class="container header"> 
+            <div class="section-header">
+                
+                <a class="header-logo" href="index.html">
+                    <svg class="logo" width="45" height="35">
+                        <use href="./images/svg/icons.svg#icon-Logo"></use>
+                    </svg>
+                </a>  
+
+                <!-- <nav>   
+                    <ul>
+                        <li><a href="./index.html">Anemone</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>  
+                </nav> -->
+
+                <a class="header-phone" href="tel:+110001111111">
+                    <svg class="phone" width="22" height="22">
+                        <use href="./images/svg/icons.svg#icon-tel"></use>
+                    </svg>
+                </a> 
+            
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg class="" width="24" height="24">
+                        <use href="./images/svg/icons.svg#icon-Burger"></use>
+                        </svg>
+                    </button>
+                
+                    <!-- <ul class="mobile-menu">
+                        <li><a href="./index.html" class="link">Anemone</a></li>
+                        <li><a href="#" class="link">About us</a></li>
+                        <li><a href="#" class="link">Store</a></li>
+                        <li><a href="#" class="link">Delivery</a></li>
+                        <li><a href="#" class="link">Blog</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </header>    
+
+        <main>
+            <section class="section-hero"></section>
+            <section class="section-about"></section>
+            <section class="section-store"></section>
+            <section class="section-delivery"></section>
+            <section class="section-blog"></section>
         
-        <nav>
-            <a href="./index.html">webstudio</a>
-             <ul>
-                <li><a href="./index.html">Studio</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+        </main>
 
-    </header>
-    <main>
-        <section>
-            <h1>Effective Solutions for Your Business</h1>
-            <button type="button">Order Service</button>
-        </section>
+        <footer class="section-footer"></section>
 
-        <section>
-            <h2>Our features</h2>
+        <!-- Base JS -->
 
-            <ul>
-                <li>
-                    <h3>Strategy</h3>
-                    <p>Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
-                </li>
-                <li>
-                    <h3>Punctuality</h3>
-                    <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li>
-                    <h3>Diligence</h3>
-                    <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-                </li>
-                <li>
-                    <h3>Technologies</h3>
-                    <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>What are we doing</h2>
-            <ul>
-                <li>
-                    <img 
-                        src="./images/img-1.jpg" 
-                        alt="There is a white monitor with some diagrams" 
-                        width="360" height="300"
-                    />
-                </li>
-                <li>
-                    <img 
-                        src="./images/img-2.jpg" 
-                        alt="There are three different screens one in front of each other and in front on the phone"  
-                        width="360" height="300"
-                    /> 
-                </li>
-                <li>
-                    <img 
-                        src="./images/img-3.jpg" 
-                        alt="There is a smartphone in a man's hand in front of the laptop" 
-                        width="360" height="300"
-                    />
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Our team</h2>
-            <ul>
-                <li>
-                    <img 
-                        src="./images/img-4.jpg" 
-                        alt="A man in a blue T-shirt with a black beard" 
-                        width="264" height="260"
-                    />
-                    <h3>Mark Guerrero</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <img 
-                        src="./images/img-5.jpg" 
-                        alt="A smiling man in a blue T-shirt"  
-                        width="264" height="260"
-                    /> 
-                    <h3>Tom Ford</h3>
-                    <p>Frontend Developer</p>
-                </li>
-                <li>
-                    <img 
-                        src="./images/img-6.jpg" 
-                        alt="A young lady with long brown hear in a pink pullover" 
-                        width="264" height="260"
-                    />
-                    <h3>Camila Garcia</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img 
-                        src="./images/img-7.jpg" 
-                        alt="A smiling man with black beard in a grey long sleeve shirt" 
-                        width="264" height="260"
-                    />
-                    <h3>Daniel Wilson</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>  
-        </section>
-
-        <footer>
-
-            <a href="./index.html">webstudio</a>
-            <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-
-        </footer>
-             
-    </main>
-
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>  
+        <script src="./js/modal.js"></script>
+        <script defer src="./js/mobile_menu.js"></script>
+        <script src="./js/slick.js"></script>
+     
+    </body>
 </html>
