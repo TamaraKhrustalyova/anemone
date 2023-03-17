@@ -51,35 +51,113 @@
                         <use href="./images/svg/icons.svg#icon-tel"></use>
                     </svg>
                 </a> 
-            
-                <div class="menu-container js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle js-close-menu">
-                        <svg class="" width="24" height="24">
+
+                <button
+                    class="header-menu-btn js-open-menu"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    >
+                    <svg class="" width="24" height="24">
                         <use href="./images/svg/icons.svg#icon-Burger"></use>
-                        </svg>
-                    </button>
-                
-                    <!-- <ul class="mobile-menu">
-                        <li><a href="./index.html" class="link">Anemone</a></li>
-                        <li><a href="#" class="link">About us</a></li>
-                        <li><a href="#" class="link">Store</a></li>
-                        <li><a href="#" class="link">Delivery</a></li>
-                        <li><a href="#" class="link">Blog</a></li>
-                    </ul> -->
-                </div>
+                    </svg>
+                </button>
             </div>
         </header>    
 
         <main>
-            <section class="section-hero"></section>
-            <section class="section-about"></section>
-            <section class="section-store"></section>
+            <section class="container hero">
+                <div class="section-hero">
+
+                    <h2 class="subtitle">flower <br>studio</h2>
+                    <img class="hero-img"
+                    src="./images/photos/home page/image_home page_mob@1x.jpg" 
+                    alt="beautiful red poppy flower close-up"
+                    >
+                    <button class="button order-btn" data-modal-open type="button">
+                        <svg class="" width="64" height="76">
+                          <use href="./images/svg/icons.svg#icon-btn_hero"></use>
+                        </svg>
+                    </button>
+                    <h1 class="hero-name">ANEMONE</h1>
+
+                </div>
+            </section>
+
+            <section class="container section">
+                <div class="section section-about">
+                    
+                    <h3 class="title">ABOUT</h3>
+                    <p class="text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+                    <img class="img-about" src="./images/photos/about/image_about_mob@1x.jpg" alt="two flowers">
+
+                </div>
+            </section>
+
+            <section class="container section">
+                <div class="section-store">
+
+                    <h3 class="title">STORE</h3>
+                    <div class="store">
+                        <ul class="store-list">
+                            <li class="store-item">
+                                <img class="store-img" src="./images/photos/store/bouquet1_mob@1x.jpg" alt="small bouquet-compliment">
+                                <h4 class="store-title">compliments</h4>
+                                <p class="price">from $15</p>
+                            </li>
+                            <li class="store-item">
+                                <img class="store-img" src="./images/photos/store/bouquet2_mob@1x.jpg" alt="small bouquet-compliment">
+                                <h4 class="store-title">bouquets size S</h4>
+                                <p class="price">from $25</p>
+                            </li>
+                            <li class="store-item">
+                                <img class="store-img" src="./images/photos/store/bouquet3_mob@1x.jpg" alt="small bouquet-compliment">
+                                <h4 class="store-title">bouquets size M</h4>
+                                <p class="price">from $45</p>
+                            </li>
+                            <li class="store-item">
+                                <img class="store-img" src="./images/photos/store/bouquet4_mob@1x.jpg" alt="small bouquet-compliment">
+                                <h4 class="store-title">bouquets size L</h4>
+                                <p class="price">from $60</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
             <section class="section-delivery"></section>
             <section class="section-blog"></section>
         
         </main>
 
         <footer class="section-footer"></section>
+
+        <!-- Mobile menu -->
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>        
+            </button>
+                  
+            <ul class="mobile-menu">
+                <li><a href="./index.html" class="link">Anemone</a></li>
+                <li><a href="#" class="link">About us</a></li>
+                <li><a href="#" class="link">Store</a></li>
+                <li><a href="#" class="link">Delivery</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+            </ul> 
 
         <!-- Base JS -->
 
