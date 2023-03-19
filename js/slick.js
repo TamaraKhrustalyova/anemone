@@ -1,7 +1,7 @@
 $('.responsive').slick({
     // dots: true,
-    prevArrow: '<button type="button" class="my-slick-prev"><svg class="slick_arrow"><use href="/combat-geese/assets/sprite-435b49d1.svg#icon-arrow"></use></svg></button>',
-    nextArrow: '<button type="button" class="my-slick-next"><svg class="slick_arrow"><use href="/combat-geese/assets/sprite-435b49d1.svg#icon-arrow"></use></svg></button>',
+    prevArrow: '<button type="button" class="my-slick-prev"><svg class="slick_arrow"><use href="/images/svg/icons.svg#icon-arrow_left"></use></svg></button>',
+    nextArrow: '<button type="button" class="my-slick-next"><svg class="slick_arrow"><use href="/images/svg/icons.svg#icon-arrow_right"></use></svg></button>',
     infinite: true,
     speed: 300,
     slidesToScroll: 1,

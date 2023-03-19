@@ -24,6 +24,10 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
      </head>
 
     <body>
@@ -66,7 +70,7 @@
         </header>    
 
         <main>
-            <section class="container hero">
+            <section class="container">
                 <div class="section-hero">
 
                     <h2 class="subtitle">flower <br>studio</h2>
@@ -74,7 +78,7 @@
                     src="./images/photos/home page/image_home page_mob@1x.jpg" 
                     alt="beautiful red poppy flower close-up"
                     >
-                    <button class="button order-btn" data-modal-open type="button">
+                    <button class="order-btn" data-modal-open type="button">
                         <svg class="" width="64" height="76">
                           <use href="./images/svg/icons.svg#icon-btn_hero"></use>
                         </svg>
@@ -84,7 +88,7 @@
                 </div>
             </section>
 
-            <section class="container section">
+            <section class="container">
                 <div class="section section-about">
                     
                     <h3 class="title">ABOUT</h3>
@@ -123,12 +127,81 @@
                         </ul>
                     </div>
 
+                    <button class="button js-open-modal" data-modal="1" type="button">Order flowers</button>
+
                 </div>
             </section>
 
-            <section class="section-delivery"></section>
-            <section class="section-blog"></section>
-        
+            <section class="section section-delivery">
+                <div class="container">
+                    <h3 class="title-mob">DELIVERY</h3>
+                        <ul class="delivery-list">
+                            <li class="delivery-item">
+                                <span class="number">1</span>
+                                <p class="delivery-text">Choose your bouquet and make an order on website</p>
+                            </li>
+                            <li class="delivery-item">
+                                <span class="number">2</span>
+                                <p class="delivery-text">Wait for the call to clarify the details of the order. You can pay online or to the courier</p>
+                            </li>
+                            <li class="delivery-item">
+                                <span class="number">3</span>
+                                <p class="delivery-text">Wait for the delivery at the selected time or pick up the order from the store</p>
+                            </li>
+                            <li class="delivery-item">
+                                <span class="number">4</span>
+                                <p class="delivery-text">Make someone happy or enjoy yourself</p>
+                            </li>
+                        </ul> 
+                        
+                </div>
+                <img class="delivery-img" src="./images/photos/delivery/image delivery_mob@1x.jpg" alt="flowers">
+            </section>
+
+            <section class="section-blog" id="BLOG">
+                <div class="container">
+                    <h3 class="title">BLOG</h3>
+
+                    <div class="slick_list responsive list">
+                        <div class="slick_item">
+                          <div class="slick_box">
+                            <img src="./images/photos/blog/img_blog_01_mob@1x.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="slick_item">
+                          <div class="slick_box">
+                             <img src="./images/photos/blog/img_blog_02_mob@1x.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="slick_item">
+                          <div class="slick_box">
+                             <img src="./images/photos/blog/img_blog_03_mob@1x.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="slick_item">
+                          <div class="slick_box">
+                             <img src="./images/photos/blog/img_blog_04_mob@1x.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="slick_item">
+                          <div class="slick_box">
+                             <img src="./images/photos/blog/img_blog_05_mob@1x.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="slick_item">
+                            <div class="slick_box">
+                               <img src="./images/photos/blog/img_blog_06_mob@1x.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <p class="blog-text">Follow to our newsletter</p>
+                    
+                    <button class="button js-open-modal" data-modal="2" type="button">Subscribe</button>
+
+                </div>
+            </section>     
         </main>
 
         <footer class="section-footer"></section>
@@ -160,6 +233,10 @@
             </ul> 
 
         <!-- Base JS -->
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>  
         <script src="./js/modal.js"></script>
