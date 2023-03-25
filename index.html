@@ -58,6 +58,7 @@
 
                 <button
                     class="header-menu-btn js-open-menu"
+                   
                     type="button"
                     aria-expanded="false"
                     aria-controls="mobile-menu"
@@ -78,7 +79,7 @@
                     src="./images/photos/home page/image_home page_mob@1x.jpg" 
                     alt="beautiful red poppy flower close-up"
                     >
-                    <button class="order-btn" data-modal-open type="button">
+                    <button class="contact-us-btn js-open-modal" data-modal="1" type="button">
                         <svg class="" width="64" height="76">
                           <use href="./images/svg/icons.svg#icon-btn_hero"></use>
                         </svg>
@@ -88,8 +89,8 @@
                 </div>
             </section>
 
-            <section class="container">
-                <div class="section section-about">
+            <section class="container section">
+                <div id="about" class="section-about">
                     
                     <h3 class="title">ABOUT</h3>
                     <p class="text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
@@ -99,7 +100,7 @@
             </section>
 
             <section class="container section">
-                <div class="section-store">
+                <div id="store" class="section-store">
 
                     <h3 class="title">STORE</h3>
                     <div class="store">
@@ -132,7 +133,7 @@
                 </div>
             </section>
 
-            <section class="section section-delivery">
+            <section id="delivery" class="section section-delivery">
                 <div class="container">
                     <h3 class="title-mob">DELIVERY</h3>
                         <ul class="delivery-list">
@@ -158,7 +159,7 @@
                 <img class="delivery-img" src="./images/photos/delivery/image delivery_mob@1x.jpg" alt="flowers">
             </section>
 
-            <section class="section-blog" id="BLOG">
+            <section class="section-blog" id="blog">
                 <div class="container">
                     <h3 class="title">BLOG</h3>
 
@@ -204,7 +205,62 @@
             </section>     
         </main>
 
-        <footer class="section-footer"></section>
+        <footer class="section">
+            <div class="section-footer container">
+                
+                <nav class="footer-menu">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-list-menu">
+                        <li><a class="link nav-link footer-link" href="./index.html">Anemone</a></li>
+                        <li><a class="link nav-link footer-link" href="#about">About us</a></li>
+                        <li><a class="link nav-link footer-link" href="#store">Store</a></li>
+                        <li><a class="link nav-link footer-link" href="#delivery">Delivery</a></li>
+                    </ul>
+                 </nav>
+                 <div class="schedule">
+                    <h4 class="footer-title">Opening times</h4>
+                    <p footer-text>Every day <br>9:00 - 22:00</p>
+                 </div>
+
+                 <address class="footer-contacts">
+                    <h4 class="footer-title">Contacts</h4>
+                    <ul class="list footer-address-list">
+                        <li><a class="link footer-link" href="tel:+380631234567">+38 063 123 45 67</a></li>
+                        <li><a class="link footer-link" href="mailto:anemonestudio@example.com">anemonestudio<br>@example.com</a></li>
+                        <li><a class="link footer-link" href="https://www.google.com.ua/maps/place/Reitarska+St,+11,+Kyiv,+02000/@50.4512187,30.5082112,17z/data=!3m1!4b1!4m10!1m2!2m1!1zUmVpdGFyc2thIFN0cmVldCwgMTEgS3lpdiwgVWtyYWluZWl2INCb0YzQstGW0LI!3m6!1s0x40d4ce5bde74d21f:0x3ddb1fc45e18228!8m2!3d50.4512188!4d30.5126959!15sCi9SZWl0YXJza2EgU3RyZWV0LCAxMSBLeWl2LCBVa3JhaW5laXYg0JvRjNCy0ZbQspIBEWNvbXBvdW5kX2J1aWxkaW5n4AEA!16s%2Fg%2F11c5fhwzrb?hl=ua">Reitarska Street, 11 <br>Kyiv, Ukraine</a></li>
+                    </ul>
+                </address>
+
+                <nav class="footer-socials">
+                    <a href="https://Facebook.com" rel="noopener norefrrer" aria-label="Facebook link">
+                        <svg class="footer-icon fb" width="28" height="28">
+                        <use href="./images/svg/icons.svg#icon-facebook"></use>
+                    </svg></a>
+                    <a href="https://Instagram.com" rel="noopener norefrrer" aria-label="Instagram link">
+                        <svg class="footer-icon insta" width="28" height="28">
+                        <use href="./images/svg/icons.svg#icon-instagram"></use>
+                    </svg></a>
+                </nav>
+
+            </div>
+        </section>
+
+        <!-- Modal window -->
+
+        <!-- <div class="overlay js-overlay-modal">
+            <div class="modal modal-contact" data-modal="1">
+                <button class="js-modal-close" type="button">
+                    <svg class="modal-icon-close" width="8" height="8">
+                      <use href="./images/svg/icons.svg#icon-x"></use>
+                    </svg>
+                </button>
+    
+                
+    
+                
+                </form>
+            </div>
+        </div> -->
 
         <!-- Mobile menu -->
 
@@ -226,12 +282,13 @@
                   
             <ul class="mobile-menu">
                 <li><a href="./index.html" class="link">Anemone</a></li>
-                <li><a href="#" class="link">About us</a></li>
-                <li><a href="#" class="link">Store</a></li>
-                <li><a href="#" class="link">Delivery</a></li>
-                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#about" class="link">About us</a></li>
+                <li><a href="#store" class="link">Store</a></li>
+                <li><a href="#delivery" class="link">Delivery</a></li>
+                <li><a href="#blog" class="link">Blog</a></li>
             </ul> 
 
+    
         <!-- Base JS -->
 
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -240,7 +297,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>  
         <script src="./js/modal.js"></script>
-        <script defer src="./js/mobile_menu.js"></script>
+        <script src="./js/mobile_menu.js"></script>
         <script src="./js/slick.js"></script>
      
     </body>
